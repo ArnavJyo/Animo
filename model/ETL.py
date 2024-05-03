@@ -188,13 +188,6 @@ def recommend_anime(anime_name, num_recommendations=5):
     return recommendations
 
 
-# Example usage:
-anime_name = "Cowboy Bebop"
-num_recommendations = 5
-recommendations = recommend_anime(anime_name, num_recommendations)
-print(recommendations)
-
-
 
 if __name__ == '__main__':
     app.run(debug=True,port=8000)
