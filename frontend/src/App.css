@@ -221,3 +221,28 @@ h1 {
 .heart {
   color: white;
 }
+.for-you-container {
+  margin-left: 200px; /* Adjust as needed */
+}
+
+.anime-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.anime-category {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.category-title {
+  font-family: "Inter";
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adjust Card styling as needed */

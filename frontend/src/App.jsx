@@ -7,6 +7,7 @@ import Carousel from "./components/Carousel";
 import ExploreAiring from "./components/ExploreAiring";
 import Watchlist from "./components/WatchList";
 import { WatchlistProvider } from "./contexts/Watchlistcontext";
+import ForYou from "./components/ForYou";
 function Home() {
   return (
     <>
@@ -28,9 +29,7 @@ function Home() {
     </>
   );
 }
-function ForYou() {
-  return <h2>For You</h2>;
-}
+
 function App() {
   return (
     <Router>

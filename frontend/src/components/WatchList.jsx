@@ -17,30 +17,6 @@ function Watchlist() {
   const closeModal = () => {
     setShowModal(false);
   };
-  const sendWatchlistToBackend = (watchlist) => {
-    fetch("http://127.0.0.1:8000/for-you", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ watchlist }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to send watch list to backend");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data); // Log the response here
-      })
-      .catch((error) => {
-        console.error("Error sending watch list to backend:", error);
-      });
-  };
-  useEffect(() => {
-    sendWatchlistToBackend(watchlist);
-  }, [watchlist]);
 
   return (
     <div className='explore' style={{ overflowX: "hidden", overflowY: "auto" }}>
