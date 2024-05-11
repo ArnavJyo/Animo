@@ -19,7 +19,7 @@ function ExploreAiring() {
         setLoading(false);
 
         const response = await fetch(
-          "https://api.jikan.moe/v4/top/anime?filter=airing"
+          "https://api.jikan.moe/v4/top/anime?filter=airing&sfw=true"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
@@ -45,7 +45,7 @@ function ExploreAiring() {
   };
   return (
     <div
-      className="explore"
+      className='explore'
       style={{ overflowX: "hidden", overflowY: "auto", marginTop: "200px" }}
     >
       <h1

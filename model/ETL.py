@@ -31,13 +31,11 @@ def fetch_anime():
         # Fetch anime data from Jikan API
         anime_data = fetch_anime_data(mal_id)
         print("fetched")
-        print(anime_data)
 
         # Transform fetched data
         transformed_data = transform_data(anime_data)
         print("transformed")
        
-
         # Load transformed data into CSV
         load_into_csv(transformed_data)
         print("loaded")
@@ -148,7 +146,7 @@ def build_for_you():
     all_recommendations = {}
     for anime in watchlist:
         anime_name = anime.get('title')
-        recommendations = recommend_anime(anime_name, 5)
+        recommendations = recommend_anime(anime_name, 10)
         all_recommendations[anime_name] = recommendations
     
     # Send the recommendations to the frontend
@@ -170,7 +168,7 @@ def recommend_anime(anime_name, num_recommendations=5):
         return None
     
     # Extract the recommended anime titles
-    recommended_titles = anime_row.iloc[:, 1:num_recommendations + 1].values.tolist()[0]
+    recommended_titles = anime_row.iloc[:1, 1:num_recommendations + 1].values.tolist()[0]
     
     # Create a list to store tuples of anime title and MAL_ID
     recommendations = []

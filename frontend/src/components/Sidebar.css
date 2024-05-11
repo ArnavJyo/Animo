@@ -30,3 +30,12 @@
   width: 155px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+.sidebar-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
