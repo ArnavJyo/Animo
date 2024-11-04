@@ -1,4 +1,4 @@
-# Anino
+# Animo
 
 This is a web application that provides personalized anime recommendations based on your watchlist. It also displays similar anime suggestions using a similarity algorithm. The app is built with a React frontend and a Flask backend, utilizing the **TF-IDF (Term Frequency-Inverse Document Frequency)** algorithm to measure similarity between different anime titles.
 
